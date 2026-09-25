@@ -1,0 +1,9 @@
+{
+  "name": "sites-celly",
+  "version": "1.0.0",
+  "description": "Criação de sites sob medida - Celly Sistemas",
+  "scripts": {
+    "build": "echo 'No build needed'"
+  },
+  "private": true
+}

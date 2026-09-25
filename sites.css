@@ -1,0 +1,226 @@
+/* ============================================ */
+/* CRIAÇÃO DE SITES - estilos exclusivos desta   */
+/* página (usa a base de portfolio-styles.css)   */
+/* ============================================ */
+
+/* hero com "browser mockup" no lugar de foto */
+.sites-hero {
+  padding: 90px 0 70px;
+  background: linear-gradient(135deg, #f5f0ff 0%, #ffffff 60%);
+  overflow: hidden;
+}
+.sites-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.sites-hero-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 26px;
+}
+.sites-hero-badge-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3b3547;
+}
+.sites-hero-badge-row i { color: #5b21b6; }
+
+/* browser mockup */
+.browser-mockup-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.browser-mockup {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e9e3f4;
+  box-shadow: 0 40px 70px -25px rgba(17,12,28,0.35);
+  transform: rotate(-1.5deg);
+}
+.browser-bar {
+  height: 38px;
+  background: #ede9f5;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 14px;
+}
+.browser-dot { width: 10px; height: 10px; border-radius: 50%; }
+.browser-dot:nth-child(1) { background: #ff5f57; }
+.browser-dot:nth-child(2) { background: #febc2e; }
+.browser-dot:nth-child(3) { background: #28c840; }
+.browser-url {
+  margin-left: 10px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px 16px;
+  font-size: 11px;
+  color: #8a8494;
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+}
+.browser-screen { padding: 22px; }
+.bm-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.bm-logo-dot {
+  width: 26px; height: 26px; border-radius: 8px;
+  background: linear-gradient(135deg,#8b5cf6,#5b21b6);
+}
+.bm-nav-lines { display: flex; gap: 10px; }
+.bm-nav-lines span { width: 30px; height: 6px; border-radius: 4px; background: #ece7f7; }
+.bm-hero {
+  background: linear-gradient(135deg,#5b21b6,#8b5cf6);
+  border-radius: 14px;
+  padding: 26px 22px;
+  margin-bottom: 16px;
+}
+.bm-hero span { display: block; height: 8px; border-radius: 4px; background: rgba(255,255,255,0.85); margin-bottom: 8px; }
+.bm-hero span.w60 { width: 60%; }
+.bm-hero span.w40 { width: 40%; opacity: 0.7; margin-bottom: 16px; }
+.bm-hero .bm-btn { width: 96px; height: 24px; border-radius: 20px; background: #fff; }
+.bm-cards { display: flex; gap: 10px; }
+.bm-cards .bm-card { flex: 1; height: 60px; background: #f0ecfa; border-radius: 10px; }
+.browser-mockup-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: #d9ccf7;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.55;
+  z-index: 1;
+}
+.floating-tag {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #e9e3f4;
+  border-radius: 14px;
+  padding: 10px 16px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #2d2a3a;
+  box-shadow: 0 14px 30px rgba(17,12,28,0.12);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 3;
+}
+.floating-tag i { color: #22c55e; }
+.floating-tag-top { top: -6px; right: 12px; }
+.floating-tag-bottom { bottom: -10px; left: -18px; }
+
+@media (max-width: 900px) {
+  .sites-hero-grid { grid-template-columns: 1fr; }
+  .browser-mockup { max-width: 380px; transform: none; }
+  .floating-tag { display: none; }
+}
+
+/* elementos decorativos - seção "feito sob medida" */
+.diferenciais-section { position: relative; overflow: hidden; }
+.diferenciais-section .container { position: relative; z-index: 2; }
+.diferenciais-decor-left,
+.diferenciais-decor-right {
+  position: absolute;
+  top: -40px;
+  max-width: 320px;
+  width: auto;
+  height: auto;
+  opacity: 0.35;
+  filter: brightness(0);
+  z-index: 0;
+  pointer-events: none;
+}
+.diferenciais-decor-left { left: 6%; transform: scaleX(-1); }
+.diferenciais-decor-right { right: 6%; }
+@media (max-width: 768px) {
+  .diferenciais-decor-left,
+  .diferenciais-decor-right { display: none; }
+}
+
+/* tipos de site */
+.tipos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.tipo-card {
+  background: #fff;
+  border: 1px solid #e9e3f4;
+  border-radius: 20px;
+  padding: 28px 22px;
+  transition: 0.2s;
+}
+.tipo-card:hover { box-shadow: 0 16px 40px rgba(91,33,182,0.08); border-color: #cbb9f0; transform: translateY(-4px); }
+.tipo-card .icon {
+  width: 52px; height: 52px;
+  background: #f0ecfa;
+  border-radius: 14px;
+  display: grid; place-items: center;
+  font-size: 24px;
+  color: #6d28d9;
+  margin-bottom: 18px;
+}
+.tipo-card h3 { font-size: 18px; margin-bottom: 8px; }
+.tipo-card p { font-size: 14px; color: #4b4654; }
+@media (max-width: 900px) { .tipos-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px) { .tipos-grid { grid-template-columns: 1fr; } }
+
+/* formulário de contato (mesmo padrão dos outros sites) */
+.sites-form-section { padding: 90px 0; }
+.sites-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.sites-form-card {
+  background: #fff;
+  border: 1px solid #e9e3f4;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 20px 50px rgba(17,12,28,0.08);
+}
+.sites-form-group { margin-bottom: 16px; }
+.sites-form-group input,
+.sites-form-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ded8ec;
+  border-radius: 12px;
+  font: 500 14px 'Inter', sans-serif;
+  color: #2d2a3a;
+  background: #fbfaff;
+}
+.sites-form-group input:focus,
+.sites-form-group select:focus { outline: none; border-color: #8b5cf6; }
+.btn-sites-form {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 50px;
+  background: #8b5cf6;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-sites-form:hover { background: #4c1d95; }
+.sites-form-note { font-size: 12.5px; color: #7a7488; margin-top: 12px; text-align: center; }
+@media (max-width: 900px) { .sites-form-grid { grid-template-columns: 1fr; } }
