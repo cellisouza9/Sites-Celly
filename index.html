@@ -9,62 +9,41 @@
 <link rel="icon" type="image/png" href="portifolio-img/logo/favicon-celly.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Montserrat:wght@600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="portfolio-styles.css">
 <link rel="stylesheet" href="sites.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="container nav">
-    <a href="https://portfolio-nine-theta-0zk95ls3ew.vercel.app/" class="logo"><img src="portifolio-img/logo/logo-celly.png" alt="CellySistemas"></a>
-    <button class="menu-toggle" aria-label="menu">☰</button>
-    <nav class="menu">
-      <a href="#tipos">Tipos de site</a>
-      <a href="#como-funciona">Como funciona</a>
-      <a href="https://portfolio-nine-theta-0zk95ls3ew.vercel.app/">Voltar ao portfólio</a>
-      <a href="#contato" class="nav-cta">Quero meu site</a>
-    </nav>
-  </div>
+<header class="hh-nav">
+  <a class="hh-brand" href="https://portfolio-nine-theta-0zk95ls3ew.vercel.app/"><img src="assets/celly-mark.png" alt="">cellysistemas</a>
+  <button class="menu-toggle hh-menu-toggle" aria-label="menu">☰</button>
+  <nav class="menu hh-menu">
+    <a href="#">Início</a>
+    <a href="#tipos">Tipos de site</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#contato">Contato</a>
+  </nav>
 </header>
 
 <main>
 
   <!-- HERO -->
-  <section class="sites-hero">
-    <div class="container sites-hero-grid">
-      <div class="reveal">
-        <span class="eyebrow">Criação de Sites Sob Medida</span>
-        <h1>Um site profissional que <strong>vende por você</strong></h1>
-        <p>Site institucional, landing page ou loja online — desenvolvemos do zero, com design moderno, rápido e pensado para transformar visitantes em clientes.</p>
-        <div class="btn-group">
-          <a href="#contato" class="btn btn-primary"><i class="fas fa-rocket"></i> Quero meu site</a>
-          <a href="#tipos" class="btn btn-secondary">Ver tipos de site</a>
-        </div>
-        <div class="sites-hero-badge-row">
-          <span><i class="fas fa-mobile-screen-button"></i> 100% responsivo</span>
-          <span><i class="fas fa-bolt"></i> Carregamento rápido</span>
-          <span><i class="fas fa-magnifying-glass"></i> Otimizado para SEO</span>
-        </div>
+  <section class="hh-hero">
+    <div class="reveal">
+      <span class="hh-kicker">CRIAÇÃO DE SITES SOB MEDIDA</span>
+      <h1>Um site profissional que <span>vende por você</span></h1>
+      <p class="hh-lead">Site institucional, landing page ou loja online — desenvolvemos do zero, com design moderno, rápido e pensado para transformar visitantes em clientes.</p>
+      <div class="hh-ctas">
+        <a class="hh-btn hh-btn-primary" href="#contato">Quero meu site</a>
+        <a class="hh-btn hh-btn-secondary" href="#tipos">Ver tipos de site</a>
       </div>
-      <div class="sites-hero-devices reveal">
-        <div class="browser-mockup-glow"></div>
-        <div class="floating-tag floating-tag-top"><i class="fas fa-circle-check"></i> Site no ar</div>
-        <div class="hero-monitor">
-          <div class="hero-monitor-screen">
-            <img src="portifolio-img/img/print do site.png" alt="Exemplo de site desenvolvido pela Celly Sistemas">
-          </div>
-          <div class="hero-monitor-stand"></div>
-          <div class="hero-monitor-base"></div>
-        </div>
-        <div class="hero-phone">
-          <div class="hero-phone-screen">
-            <img src="portifolio-img/img/print do site.png" alt="">
-          </div>
-        </div>
-        <div class="floating-tag floating-tag-bottom"><i class="fas fa-palette"></i> Design sob medida</div>
-      </div>
+      <div class="hh-perks"><span>100% responsivo</span><span>Carregamento rápido</span><span>Otimizado para SEO</span></div>
+    </div>
+    <div class="hh-visual reveal">
+      <div class="hh-circulo" aria-hidden="true"></div>
+      <img class="hh-aparelhos" src="assets/computador-celular.png" alt="Site da Celly Sistemas no computador e no celular">
     </div>
   </section>
 
